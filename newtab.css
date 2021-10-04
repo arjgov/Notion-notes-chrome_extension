@@ -39,7 +39,11 @@ ul{
 .newnotebutton:hover,
 ul li.active,
 ul li:hover{
-    background-color: rgba(0,0,0,0.5);
+    background-color: black;
+    border-radius: 11px;
+    transition : 100ms transform ease-in;
+    transform : scale(1.08);
+    color:white;
 }
 
 .deletePage{
