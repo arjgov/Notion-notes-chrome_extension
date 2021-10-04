@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="newtab.css">
+<!DOCTYPE html>
+<html>
+    <head className="headerclass">
+      <title> Notion notes app </title>
+      <meta charset="utf-8" >
+    </head>
+    <body>
+     <div class="main">
+       <aside class="sidebar">
+           <div class="icon">🪄</div>
+           <h1>Notes</h1>
+           <div class="newnotebutton">➕ New Note</div>
+           <div class="pagesholder"></div>
+       </aside>
+       <section class="holder">
+           <div class="icon">⚙️</div>
+
+           <button class="savePage hidden">Save</button>
+           <button class="deletePage hidden">Delete</button>
+
+           <h1 contenteditable="true" placeholder="Untitled"></h1>
+           <div class="post-body" contenteditable="true" placeholder="Write your post here"></div>
+       </section>
+     </div>
+     <script src="app.js"></script>
+    </body>
+</html>

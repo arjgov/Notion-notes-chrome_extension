@@ -1,0 +1,16 @@
+{
+    "name" : "Notion-notes",
+    "version":"0.01",
+    "description": "Notes when new tab",
+    "background":{
+        "page": "background.html",
+        "persistent": false
+
+    },
+    "chrome_url_overrides":{
+        "newtab" : "newtab.html"
+    },
+    "manifest_version":2,
+    "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'"
+
+}

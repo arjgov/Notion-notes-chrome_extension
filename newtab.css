@@ -1,0 +1,111 @@
+html,body{
+    height:100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+[contenteditable]:focus
+{
+  outline:0px solid transparent;
+}
+
+[placeholder]:empty:before
+{
+    content:attr(placeholder);
+    color : black;
+    opacity: 0.4;
+    cursor:text;
+}
+
+[placeholder]:empty:focus:before{
+    content:"";
+}
+
+ul{
+    padding:0;
+    margin:0;
+    list-style-type: none;
+}
+
+.newnotebutton, ul li{
+    padding-top:5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+.newnotebutton:hover,
+ul li.active,
+ul li:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.deletePage{
+    margin-right:15px;
+}
+
+.savePage, .deletePage{
+    float: right;
+    padding: 10px 20px;
+    background: transparent;
+    border-radius: 3px;
+    border:2px solid;
+    color:black;
+    font-weight:bold;
+}
+
+.savePage:hover, .deletePage:hover{
+    background: black;
+    color:white;
+}
+
+.hidden{
+    display: none;
+}
+
+.post-body{
+    min-height: 100px;
+    width:100%;
+}
+
+h1{
+    font-family: 'Playfair Display',Georgia,serif;
+    font-weight: 900;
+}
+
+body{
+    background: #f7fafc;
+    color:#4a5568;
+}
+
+div.main{
+    display:flex;
+    height:100%;
+}
+
+aside.sidebar{
+    width: 300px;
+    background: #edf2f7;
+    height:100%;
+    padding:25px;
+
+}
+
+section.holder{
+    width: -webkit-fill-available;
+    height:100%;
+    padding:25px;
+}
+
+div.icon{
+    height:50px;
+    width:50px;
+    line-height: 50px;
+    font-size: 40px;
+}
+
+.holder div.icon{
+    cursor: pointer;
+}
